@@ -9,12 +9,14 @@ type Foo interface {
 type FooImpl struct {
 	Abc string
 	Def string
+	Ghi string
 }
 
 func (fooImpl *FooImpl) GetFoo() Foo {
 	return &FooImpl{
 		Abc: "ABC",
 		Def: "DEF",
+		Ghi: "Ghi",
 	}
 }
 
